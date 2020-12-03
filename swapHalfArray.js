@@ -3,7 +3,9 @@ var temp
 
 function swapHalf() {
     var limitOfArray = readlineSync.question('Enter the limit of array:');
+    limitOfArray = parseInt(limitOfArray);
     console.log("Limit is : " + limitOfArray);
+    console.log(typeof limitOfArray);
 
     var array = [];
     if (limitOfArray > 0) {
