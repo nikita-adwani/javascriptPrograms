@@ -1,7 +1,9 @@
 var readlineSync = require('readline-sync');
 var changePosition = () => {
     var limitOfArray = readlineSync.question('Enter the limit of array:');
+    limitOfArray = parseInt(limitOfArray);
     console.log("Limit is : " + limitOfArray);
+    console.log(typeof limitOfArray);
     var array = [];
     if (limitOfArray >= 2) {
         for (i = 0; i < limitOfArray; i++) {
