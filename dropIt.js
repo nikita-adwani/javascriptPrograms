@@ -89,6 +89,10 @@ function dropIt() {
                 console.log(resultingArray);
                 break;
             }
+        default:
+            {
+                console.log("Enter the right choice!!")
+            }
     }
 }
 dropIt();
